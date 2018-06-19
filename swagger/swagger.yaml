@@ -1,0 +1,37 @@
+consumes:
+- application/json
+- application/xml
+- application/gob
+- application/x-gob
+host: localhost:8080
+info:
+  description: A teaser for goa
+  title: The adder API
+  version: ""
+paths:
+  /:
+    get:
+      operationId: operands#get
+      produces:
+      - text/plain
+      responses:
+        "200":
+          description: OK
+      schemes:
+      - http
+      security:
+      - basic_auth: []
+      summary: get operands
+      tags:
+      - operands
+produces:
+- application/json
+- application/xml
+- application/gob
+- application/x-gob
+schemes:
+- http
+securityDefinitions:
+  basic_auth:
+    type: basic
+swagger: "2.0"

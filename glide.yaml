@@ -1,0 +1,6 @@
+package: github.com/yu-ichiko/goa-security-example
+import:
+- package: github.com/goadesign/goa
+  subpackages:
+  - design
+  - design/apidsl
